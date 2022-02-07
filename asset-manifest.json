@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/algorithm-visualizer/static/css/main.49acd969.css",
+    "main.js": "/algorithm-visualizer/static/js/main.2546a755.js",
+    "static/js/787.62a203ce.chunk.js": "/algorithm-visualizer/static/js/787.62a203ce.chunk.js",
+    "static/media/racing-flag.png": "/algorithm-visualizer/static/media/racing-flag.ce049f697844c8d639fe.png",
+    "static/media/rocket.png": "/algorithm-visualizer/static/media/rocket.944b67bbddd3f99798b6.png",
+    "index.html": "/algorithm-visualizer/index.html",
+    "main.49acd969.css.map": "/algorithm-visualizer/static/css/main.49acd969.css.map",
+    "main.2546a755.js.map": "/algorithm-visualizer/static/js/main.2546a755.js.map",
+    "787.62a203ce.chunk.js.map": "/algorithm-visualizer/static/js/787.62a203ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49acd969.css",
+    "static/js/main.2546a755.js"
+  ]
+}
