@@ -1,0 +1,306 @@
+.PathfinderVisualizer {
+  position: fixed;
+  background-color: white;
+}
+
+.grid {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+.pathfinder-button {
+  margin-top: 10px;
+  margin-left: 45px;
+  padding-left: 300px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10pc;
+  background-color: skyblue;
+}
+
+.select-alogorithm {
+  position: relative;
+  display: inline-block;
+}
+.select-alogorith-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  color: orange;
+  background-color: white;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+}
+
+.select-alogorith-btn:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.select-alogorithm-content {
+  display: none;
+  position: absolute;
+  bottom: 42px;
+  left: 10px;
+  background-color: transparent;
+  min-width: 160px;
+}
+
+.select-alogorithm-content button {
+  color: red;
+  background-color: whitesmoke;
+  width: 160px;
+  padding: 12px 16px;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+  text-decoration: none;
+  display: block;
+}
+
+.select-alogorithm-content button:hover {
+  background-color: #ddd;
+}
+
+.select-alogorithm:hover .select-alogorithm-content {
+  display: block;
+}
+
+.mazes {
+  position: relative;
+  display: inline-block;
+}
+.maze-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  color: orange;
+  background-color: white;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+}
+
+.maze-btn:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.maze-content {
+  display: none;
+  position: absolute;
+  bottom: 42px;
+  left: 10px;
+  background-color: transparent;
+  min-width: 160px;
+}
+
+.maze-content button {
+  color: red;
+  background-color: whitesmoke;
+  width: 160px;
+  padding: 12px 16px;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+  text-decoration: none;
+  display: block;
+}
+
+.maze-content button:hover {
+  background-color: #ddd;
+}
+
+.mazes:hover .maze-content {
+  display: block;
+}
+
+.visualize-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  color: orange;
+  background-color: white;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+}
+
+.visualize-btn:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.clear-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  color: orange;
+  background-color: white;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+}
+
+.clear-btn:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  margin-top: -2px;
+  outline: 1px solid skyblue;
+  display: inline-block;
+}
+.node-finish {
+  animation-name: finishNodeAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-start {
+  animation-name: startNodeAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.node-wall {
+  animation-name: wallAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-path {
+  animation-name: pathAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.5);
+    background-color: #ffeb3b;
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: #388e3c;
+  }
+
+  75% {
+    background-color: #5e35b1;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: #ec407a;
+  }
+}
+
+@keyframes pathAnimation {
+  0% {
+    transform: scale(0.5);
+    border-radius: 100%;
+    background-color: #42a5f5;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #42a5f5;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #1976d2;
+  }
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.5);
+    background-color: #37474f;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #37474f;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #37474f;
+  }
+}
+
+@keyframes finishNodeAnimation {
+  0% {
+    transform: scale(0.5);
+    background: url("/assets/racing-flag.png");
+    background-size: contain;
+    background-position: center;
+  }
+  50% {
+    transform: scale(1.2);
+    background: url("/assets/racing-flag.png");
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+  }
+  100% {
+    transform: scale(1);
+    background: url("/assets/racing-flag.png");
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@keyframes startNodeAnimation {
+  0% {
+    transform: scale(0.5);
+    background: url("/assets/rocket.png");
+    background-size: contain;
+    background-position: center;
+  }
+  50% {
+    transform: scale(1.2);
+    background: url("/assets/rocket.png");
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+  }
+  100% {
+    transform: scale(1);
+    background: url("/assets/rocket.png");
+    background-size: contain;
+    background-position: center;
+  }
+}

@@ -1,0 +1,45 @@
+.sorting-visualizer {
+  position: fixed;
+  width: 90%;
+  left: 100px;
+}
+.array-bars {
+  background-color: whitesmoke;
+  text-align: center;
+  padding-top: 15px;
+  min-height: 620px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.array-bar {
+  width: 2px;
+  max-height: fit-content;
+  vertical-align: bottom;
+  margin: 0 1px;
+  display: inline-block;
+  background-color: aqua;
+}
+
+.sorting-button {
+  margin-top: 10px;
+  padding-left: 250px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10pc;
+  background-color: skyblue;
+}
+
+.sorting-visualizer button {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  background-color: white;
+  padding: 12px;
+  border-radius: 1pc;
+  border-color: blue;
+}
+
+.sorting-visualizer button:hover {
+  color: #f1356d;
+  background-color: whitesmoke;
+}
