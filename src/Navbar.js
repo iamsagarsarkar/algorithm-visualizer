@@ -5,7 +5,7 @@ const Navbar =()=>{
        <nav className="navbar">
            <h1>Algoritm Visualizer</h1>
            <div className='links'>
-           <Link to="/">SortingVisualizer</Link>
+           <Link to="/algorithm-visualizer">SortingVisualizer</Link>
            <Link to="/SearchingVisualizer">SearchingVisualizer</Link>
            <Link to="/PathfinderVisualizer">PathfinderVisualizer</Link>
            </div>

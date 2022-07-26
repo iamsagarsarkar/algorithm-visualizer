@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <div className="content">
         <Routes>
-        <Route exact path="/" element={<SortingVisualizer/>} />
+        <Route exact path="/algorithm-visualizer" element={<SortingVisualizer/>} />
         <Route path="/SearchingVisualizer" element={<SearchingVisualizer/>} />
         <Route  path="/PathfinderVisualizer" element={<PathfinderVisualizer/>}/>
         </Routes>

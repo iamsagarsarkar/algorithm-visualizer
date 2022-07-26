@@ -1,5 +1,5 @@
 .searching-visualizer {
-  position: fixed;
+  position:relative;
   width: 90%;
   left: 100px;
 }

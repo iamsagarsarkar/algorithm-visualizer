@@ -1,5 +1,5 @@
 .PathfinderVisualizer {
-  position: fixed;
+  position:relative;
   background-color: white;
 }
 
